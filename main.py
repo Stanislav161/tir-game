@@ -100,3 +100,22 @@ while running:
 
 pygame.quit()
 sys.exit()
+
+import telebot
+
+# Замените 'YOUR_BOT_TOKEN' на токен, полученный от @BotFather
+TOKEN = '7573968967:AAGMW0Q3EqZHLvCIjCU4oh6EeqOXTtZfN5M'
+
+# Создаем экземпляр бота
+bot = telebot.TeleBot(TOKEN)
+
+# Обработчик для всех типов сообщений
+@bot.message_handler(func=lambda message: True)
+def send_welcome(message):
+    response = "Этот бот лежит на локальном сервере с автозапуском"
+    bot.reply_to(message, response)
+
+if __name__ == '__main__':
+    print('Бот запущен...')
+    bot.polling(none_stop=True)
+

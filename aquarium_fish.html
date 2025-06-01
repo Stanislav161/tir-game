@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мир Аквариумных Рыбок</title>
+    <style>
+        /* Общие стили */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #e0f7ff;
+            background-image: linear-gradient(to bottom, #87CEEB, #e0f7ff);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Шапка */
+        header {
+            background-color: #006994;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 5px solid #ffd700;
+        }
+
+        header h1 {
+            color: white;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Навигация */
+        nav {
+            background-color: #0099cc;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        /* Основной контент */
+        main {
+            padding: 30px 0;
+        }
+
+        .fish-section {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .fish-section h2 {
+            color: #006994;
+            border-bottom: 2px solid #ffd700;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .fish-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .fish-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 280px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .fish-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .fish-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-bottom: 3px solid #0099cc;
+        }
+
+        .fish-info {
+            padding: 15px;
+        }
+
+        .fish-info h3 {
+            color: #006994;
+            margin-bottom: 10px;
+        }
+
+        /* Подвал */
+        footer {
+            background-color: #006994;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav li {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🐠 Мир Аквариумных Рыбок 🐠</h1>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#types">Виды рыбок</a></li>
+                <li><a href="#care">Уход</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="home" class="fish-section">
+            <h2>Добро пожаловать в подводный мир!</h2>
+            <p>Аквариумные рыбки - это удивительные создания, которые приносят умиротворение и красоту в ваш дом. На нашем сайте вы найдете информацию о различных видах аквариумных рыбок, особенностях их содержания и ухода.</p>
+            <p>Аквариумистика - это не просто хобби, а целое искусство создания подводных экосистем!</p>
+        </section>
+
+        <section id="types" class="fish-section">
+            <h2>Популярные виды рыбок</h2>
+            <div class="fish-gallery">
+                <div class="fish-card">
+                    <img src="https://avatars.mds.yandex.net/i?id=4ccf1c7516732ae6a87f50fcde67cb4246bf8441-5858852-images-thumbs&n=13=Гуппи" alt="Гуппи" class="fish-image">
+                    <div class="fish-info">
+                        <h3>Гуппи</h3>
+                        <p>Яркие, неприхотливые, идеальны для начинающих. Разнообразие расцветок и форм плавников.</p>
+                    </div>
+                </div>
+
+                <div class="fish-card">
+                    <img src="https://avatars.mds.yandex.net/i?id=9573aa52b75a11231db600f9a97c069c69ca48df-5277189-images-thumbs&n=13=Скалярия" alt="Скалярия" class="fish-image">
+                    <div class="fish-info">
+                        <h3>Скалярия</h3>
+                        <p>Элегантные рыбки с необычной треугольной формой тела. Требуют просторного аквариума.</p>
+                    </div>
+                </div>
+
+                <div class="fish-card">
+                    <img src="https://avatars.mds.yandex.net/i?id=310b0afa5802aba94ca58250ebdaae665052c5f4-5588356-images-thumbs&n=13=Неон" alt="Неон" class="fish-image">
+                    <div class="fish-info">
+                        <h3>Неон</h3>
+                        <p>Маленькие стайные рыбки с яркой светящейся полосой. Создают эффектную картину в аквариуме.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="care" class="fish-section">
+            <h2>Основы ухода за рыбками</h2>
+            <ul>
+                <li>Регулярная подмена воды (20-30% в неделю)</li>
+                <li>Правильное кормление 1-2 раза в день</li>
+                <li>Поддержание стабильной температуры</li>
+                <li>Адекватная фильтрация и аэрация</li>
+                <li>Контроль параметров воды (pH, аммиак, нитриты)</li>
+                <li>Достаточное пространство для плавания</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Мир Аквариумных Рыбок | Все права защищены</p>
+            <p>Контактный email: fish-world@example.com</p>
+        </div>
+    </footer>
+</body>
+</html>
+
